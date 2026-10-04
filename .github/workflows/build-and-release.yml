@@ -43,7 +43,7 @@ jobs:
                   clone_args+=(https://github.com/raspberrypi/linux linux)
                   git "${clone_args[@]}"
                   cd linux
-                  git fetch --unshallow || true && git checkout 60ea684a8ace97bb0db1a16e20753bdd6ab371ff
+                  git fetch --unshallow || true && git checkout c8c7494100e99ee05b11aaa4f0588a223a63d1af
                   kernel_commit="$(git rev-parse HEAD)"
                   short_commit="$(git rev-parse --short=12 HEAD)"
                   resolved_branch="$(git rev-parse --abbrev-ref HEAD)"
